@@ -1,0 +1,11 @@
+[package]
+name = "net"
+version = "0.1.0"
+edition = "2018"
+author = "Gabriel"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rmp-serde = "0.15.5"
+serde = { version = "1.0.126", features = ["derive"] }
