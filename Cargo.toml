@@ -7,4 +7,4 @@ edition = "2018"
 
 [dependencies]
 rmp-serde = "0.15.5"
-serde = { version = "1.0.126", features = ["derive"] }
+serde = { version = "1.0.127", features = ["derive"] }
