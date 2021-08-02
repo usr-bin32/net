@@ -3,7 +3,7 @@ use std::{
     net::TcpStream,
 };
 
-use net::Request;
+use net::{command, Request};
 
 fn main() {
     let mut stream = TcpStream::connect(net::SERVER_ADDR).unwrap();
@@ -32,23 +32,11 @@ fn read_user_request() -> Request {
     loop {
         let mut input = String::new();
         io::stdin().read_line(&mut input).unwrap();
+        let input = command::preprocess(&input);
 
-        let input = input
-            .strip_suffix("\r\n")
-            .or(input.strip_suffix("\n"))
-            .unwrap_or(&input);
-
-        let (command, message) = match input.split_once(' ') {
-            Some(content) => content,
-            None => (input, ""),
-        };
-
-        let request = match command.to_ascii_lowercase().as_str() {
-            "echo" => Request::Echo(message.into()),
-            "exit" => Request::Exit,
-            _ => continue,
-        };
-
-        break request;
+        match command::parse(input) {
+            Some(request) => break request,
+            None => continue,
+        }
     }
 }
