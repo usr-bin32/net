@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["run","Executa um novo processo servidor de forma blocante por tempo indeterminado. O servidor é capaz de servir um número indeterminado de clientes. Ao receber uma nova solicitação de conexão TCP, o servidor aloca uma nova thread para o cliente, responsável por servi-lo exclusivamente durante seu tempo de vida."]]});

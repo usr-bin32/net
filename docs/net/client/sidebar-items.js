@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["run","Executa um novo processo cliente de forma síncrona. O cliente tenta se conectar ao servidor local e então passa a interagir com o usuário via entrada padrão e trocar mensagens com o servidor via TCP, até que o usuário encerre a sessão."]]});

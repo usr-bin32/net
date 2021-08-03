@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["SERVER_ADDR","Endereço IPV4 do servidor de echo."]],"enum":[["Request","Estrutura que representa uma requisição (comando) realizada pelo processo cliente. A requisição é serializada no formato MsgPack."]],"mod":[["client","Estruturas e funções relativas ao processo cliente."],["server","Estruturas e funções relativas ao processo servidor."]]});

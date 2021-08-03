@@ -1,8 +1,16 @@
 # Echo
-Este projeto consiste em uma aplicação cliente-servidor que implementa a função de [`echo`](https://en.wikipedia.org/wiki/Echo_(command)).
+Este projeto consiste em uma aplicação cliente-servidor que implementa a função de [`echo`](https://en.wikipedia.org/wiki/Echo_(command)) dentro de uma máquina via sockets TCP.
 
 ## Projeto
-Projeto
+Sob o ponto de vista dinâmico, o sistema consiste em um processo servidor que serve N processos clientes dentro de um mesmo host via sockets TCP.
+
+![](./docs/img/dyn.png)
+
+Do ponto de vista estático, o sistema é estruturado em camadas, dividido em nível de aplicação e nível de biblioteca. O nível de biblioteca contém as funções e estruturas comuns ao cliente e ao servidor.
+
+![](./docs/img/sta.png)
+
+> A documentação da implementação pode ser consultada em .
 
 ## Compilação
 
@@ -33,7 +41,7 @@ Para utilizar a aplicação, é necessário, primeiro, executar o processo servi
 Server started at 127.0.0.1:7878
 ```
 
-Em seguida, basta rodar os programas clientes através do binário `client`. O cliente fornece uma interface via console e fornece dois comandos: `echo [message]` e `exit`. A interação com o programa é ilustrada a seguir.
+Em seguida, basta rodar os programas clientes através do binário `client`. O cliente fornece uma interface via console e fornece dois comandos `echo [message]` e `exit`. A interação com o programa é ilustrada a seguir.
 
 ```
 Connected to the server
