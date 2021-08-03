@@ -10,7 +10,7 @@ Do ponto de vista estático, o sistema é estruturado em camadas, dividido em n�
 
 ![](./docs/img/sta.png)
 
-> A documentação da implementação pode ser consultada em .
+> [A documentação da implementação pode ser consultada neste link](https://usr-bin32.github.io/net/net/).
 
 ## Compilação
 
