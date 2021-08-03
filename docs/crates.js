@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["byteorder","client","net","num_traits","proc_macro2","quote","rmp","rmp_serde","serde","serde_derive","server","syn","unicode_xid"];
